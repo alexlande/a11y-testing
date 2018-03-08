@@ -617,7 +617,17 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide bgColor={green}>
-          <SerifHeading>Thanks!</SerifHeading>
+          <SerifHeading margin="0 0 0.5em">Thanks!</SerifHeading>
+
+          <Text>
+            <Link
+              textColor={darkTextColor}
+              textFont={serifFont}
+              href="https://www.alexlande.com/a11y-testing"
+            >
+              https://www.alexlande.com/a11y-testing
+            </Link>
+          </Text>
 
           <ContactInfo />
         </Slide>
