@@ -1,0 +1,118 @@
+html,
+body {
+  font-size: 16px !important;
+}
+
+body {
+  fill: currentColor;
+}
+
+.reset {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scroll: auto;
+  font-size: 16px;
+  text-align: left;
+}
+
+.reset * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+.reset svg {
+  fill: currentColor;
+}
+
+.reset button {
+  cursor: pointer;
+}
+
+.noOutline * {
+  outline: none !important;
+}
+
+.keyboardOutline *:focus {
+  outline: none !important;
+}
+
+[data-whatintent='keyboard'] .keyboardOutline *:focus {
+  outline: 2px solid #19a974 !important;
+  outline-offset: 2px;
+}
+
+.a11yText {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.depth-1 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.02),
+    0 3px 1px -2px rgba(0, 0, 0, 0.1);
+}
+
+.depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.04), 0 1px 10px 0 rgba(0, 0, 0, 0.02),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.depth-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.04), 0 1px 18px 0 rgba(0, 0, 0, 0.02),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.04),
+    0 3px 14px 2px rgba(0, 0, 0, 0.02), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.depth-5 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.04),
+    0 6px 30px 5px rgba(0, 0, 0, 0.02), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.primaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  grid-auto-rows: max-content 1fr;
+}
+
+.primaryGrid--center {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 2;
+}
+
+@media (min-width: 1200px) {
+  .primaryGrid {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+.photosGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+}
+
+.controls {
+  min-width: 25%;
+}
+
+.controlsGrid {
+  display: grid;
+  grid-gap: 8px;
+}
+
+.modalBackdrop {
+  transition: 300ms ease-out background-color;
+}

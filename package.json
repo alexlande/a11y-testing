@@ -1,0 +1,31 @@
+{
+  "name": "a11y-talk",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "emotion": "^9.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "focus-trap-react": "^3.1.2",
+    "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-transition-group": "^2.2.1",
+    "spectacle-scripts": "2.0.0",
+    "tachyons": "^4.9.1",
+    "what-input": "^5.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write --config .prettierrc \"**/*.{js,css,json}\" --ignore-path .gitignore",
+      "git add"
+    ]
+  }
+}

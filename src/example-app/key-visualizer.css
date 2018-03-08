@@ -1,0 +1,33 @@
+:root {
+  --timing: cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.keyVisualizer {
+  pointer-events: none;
+}
+
+.keyBox {
+  width: 250px;
+  height: 100px;
+}
+
+.keypress-enter {
+  opacity: 0;
+}
+
+.keypress-enter.keypress-enter-active {
+  opacity: 1;
+  transition: 500ms var(--timing) opacity;
+}
+
+.keypress-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.keypress-exit.keypress-exit-active {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 300ms 700ms var(--timing) opacity,
+    300ms 700ms var(--timing) transform;
+}
