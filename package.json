@@ -12,6 +12,7 @@
     "prettier": "^1.10.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-emotion": "8.0.12",
     "react-transition-group": "^2.2.1",
     "spectacle-scripts": "2.0.0",
     "tachyons": "^4.9.1",

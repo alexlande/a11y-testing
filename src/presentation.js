@@ -132,10 +132,6 @@ const ContactInfo = ({ textAlign }) => (
     textColor="primary"
     textFont="secondary"
   >
-    <Link textColor={white} href="https://www.alexlande.com">
-      alexlande.com
-    </Link>{' '}
-    •{' '}
     <Link textColor={white} href="https://www.twitter.com/alexlande">
       @alexlande
     </Link>
@@ -259,71 +255,6 @@ export default class Presentation extends React.Component {
           <ContactInfo textAlign="right" />
         </Slide>
 
-        <Slide bgColor="#000" bgImage={spaceImg} textColor="#fff">
-          <div
-            className={css`
-              max-width: 500px;
-              margin: 0 auto;
-              padding: 40px;
-            `}
-          >
-            <FormidableLogo />
-          </div>
-        </Slide>
-
-        <Slide bgColor={green}>
-          <SansHeading fit>A True Story</SansHeading>
-          <SansHeading fit textColor={darkTextColor}>
-            (From Early in My Career)
-          </SansHeading>
-        </Slide>
-
-        <Slide bgColor={green}>
-          <CitedQuote source="My boss">
-            The accessibility audit is next week. We’re ready, right?
-          </CitedQuote>
-        </Slide>
-
-        <Slide bgColor={green}>
-          <CitedQuote source="Me">Yeah, of course!</CitedQuote>
-        </Slide>
-
-        <Slide bgColor={white}>
-          <SerifHeading textColor={black} size={4} margin="0 0 0.7em">
-            So I <GoogleText /> it
-          </SerifHeading>
-
-          <AnimatedSearch value="how to make websites accessible fast" />
-        </Slide>
-
-        <Slide bgColor={green}>
-          <SansHeading fit>There are approximately</SansHeading>
-
-          <SansHeading fit textColor={darkTextColor}>
-            7.4 billion
-          </SansHeading>
-
-          <SansHeading fit>accessibility articles on the internet</SansHeading>
-        </Slide>
-
-        <Slide bgColor={green}>
-          <HeadingList title="And so many rules">
-            <AppearListItem>Use real button elements!</AppearListItem>
-            <AppearListItem>Don’t hide focus outlines!</AppearListItem>
-            <AppearListItem>Provide alt text!</AppearListItem>
-            <AppearListItem>
-              Use… <Code>tabindex</Code>?
-            </AppearListItem>
-          </HeadingList>
-        </Slide>
-
-        <Slide bgColor={green}>
-          <SansHeading fit>The audit went…</SansHeading>
-          <SansHeading fit textColor={darkTextColor}>
-            Not great
-          </SansHeading>
-        </Slide>
-
         <Slide bgColor={green}>
           <SerifHeading size={3} textColor={white}>
             Accessibility is <TextHighlight>invisible</TextHighlight>
@@ -441,17 +372,6 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide bgColor={green}>
-          <img
-            style={{
-              maxWidth: '90%',
-              marginTop: -60
-            }}
-            src={preferencesImg}
-            alt="macOS keyboard preferences"
-          />
-        </Slide>
-
-        <Slide bgColor={green}>
           <DemoTime>Focus Outlines</DemoTime>
         </Slide>
 
@@ -467,12 +387,8 @@ export default class Presentation extends React.Component {
           <LinksList
             links={[
               {
-                title: 'what-input',
-                href: 'https://github.com/ten1seven/what-input'
-              },
-              {
                 title: ':focus-visible',
-                href: 'https://github.com/WICG/focus-visible'
+                href: 'https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible'
               }
             ]}
           />
@@ -564,10 +480,6 @@ export default class Presentation extends React.Component {
           <LinksList
             links={[
               {
-                title: 'Inclusive Components',
-                href: 'https://inclusive-components.design'
-              },
-              {
                 title: 'WAI-ARIA Authoring Practices',
                 href: 'https://www.w3.org/TR/wai-aria-practices-1.1'
               }
@@ -596,7 +508,7 @@ export default class Presentation extends React.Component {
             links={[
               {
                 title: 'WebAIM Screen Reader User Survey',
-                href: 'https://webaim.org/projects/screenreadersurvey7/'
+                href: 'https://webaim.org/projects/screenreadersurvey10/'
               }
             ]}
           />
